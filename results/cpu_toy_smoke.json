@@ -1,0 +1,63 @@
+{
+  "run_type": "small CPU smoke test on artificially templated character strings",
+  "cpu": "x86_64",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "torch_version": "2.10.0+cpu",
+  "cpu_only": true,
+  "cuda_available": false,
+  "num_cpu_threads": 2,
+  "seed": 3401,
+  "train_lines": 409,
+  "val_lines": 51,
+  "test_lines": 52,
+  "characters": {
+    "train": 7465,
+    "val": 937,
+    "test": 942
+  },
+  "vocab_size": 36,
+  "params": 11908,
+  "context_chars": 32,
+  "steps": 100,
+  "batch_size": 12,
+  "training_wall_seconds": 0.3146,
+  "training_tokens_processed": 38400,
+  "train_tokens_per_second": 122073.26,
+  "unigram_test_cross_entropy": 3.23631,
+  "transformer_test_cross_entropy": 1.66108,
+  "unigram_test_perplexity": 25.4397,
+  "transformer_test_perplexity": 5.265,
+  "history": [
+    {
+      "step": 1,
+      "train_minibatch_loss": 3.74825,
+      "val_sampled_loss": 3.6816
+    },
+    {
+      "step": 20,
+      "train_minibatch_loss": 2.99412,
+      "val_sampled_loss": 2.90328
+    },
+    {
+      "step": 40,
+      "train_minibatch_loss": 2.46587,
+      "val_sampled_loss": 2.4043
+    },
+    {
+      "step": 60,
+      "train_minibatch_loss": 2.06595,
+      "val_sampled_loss": 2.03515
+    },
+    {
+      "step": 80,
+      "train_minibatch_loss": 1.7711,
+      "val_sampled_loss": 1.7799
+    },
+    {
+      "step": 100,
+      "train_minibatch_loss": 1.662,
+      "val_sampled_loss": 1.63253
+    }
+  ],
+  "limits": "Very small synthetic templated data; this does NOT establish useful LLM capability, real corpus generalization, cloud economics or other CPU performance."
+}

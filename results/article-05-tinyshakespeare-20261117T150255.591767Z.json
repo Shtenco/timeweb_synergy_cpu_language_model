@@ -1,0 +1,101 @@
+{
+  "article_id": "05",
+  "created_utc": "2026-11-17T15:02:54.242965+00:00",
+  "dataset": {
+    "characters": 1115394,
+    "lines": 40001,
+    "name": "Tiny Shakespeare subset",
+    "source_bytes": 1115394,
+    "source_sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+    "source_url": "https://github.com/karpathy/char-rnn/blob/master/data/tinyshakespeare/input.txt",
+    "split_characters": {
+      "test": 55771,
+      "train": 1003854,
+      "validation": 55769
+    },
+    "split_method": "contiguous first 90% train, next 5% validation, final 5% test; vocabulary fit on train only",
+    "vocabulary_size": 65
+  },
+  "environment": {
+    "device": "CPU",
+    "logical_cpus": 4,
+    "numpy": "2.5.4",
+    "physical_memory_bytes": 4139626496,
+    "platform": "Windows-11-10.0.28000-SP0",
+    "processor": "Intel64 Family 6 Model 42 Stepping 7, GenuineIntel",
+    "python": "3.12.10",
+    "torch": "2.15.0+cpu",
+    "torch_threads": 1
+  },
+  "evidence_type": "measured_public_text",
+  "experiment": "Train a tiny causal character Transformer on public-domain play text on CPU",
+  "history": [
+    {
+      "step": 1,
+      "train_batch_cross_entropy": 4.325641632080078,
+      "validation_cross_entropy": 4.273761696711474
+    },
+    {
+      "step": 25,
+      "train_batch_cross_entropy": 3.3678138256073,
+      "validation_cross_entropy": 3.346062619705288
+    },
+    {
+      "step": 50,
+      "train_batch_cross_entropy": 2.996910810470581,
+      "validation_cross_entropy": 3.1019064468576496
+    },
+    {
+      "step": 75,
+      "train_batch_cross_entropy": 2.95953631401062,
+      "validation_cross_entropy": 2.9448822888660104
+    },
+    {
+      "step": 100,
+      "train_batch_cross_entropy": 2.870039939880371,
+      "validation_cross_entropy": 2.8417546965361464
+    },
+    {
+      "step": 125,
+      "train_batch_cross_entropy": 2.6939287185668945,
+      "validation_cross_entropy": 2.778519364366849
+    },
+    {
+      "step": 150,
+      "train_batch_cross_entropy": 2.718662738800049,
+      "validation_cross_entropy": 2.719291325688499
+    },
+    {
+      "step": 175,
+      "train_batch_cross_entropy": 2.6444034576416016,
+      "validation_cross_entropy": 2.676407922422845
+    },
+    {
+      "step": 200,
+      "train_batch_cross_entropy": 2.675088405609131,
+      "validation_cross_entropy": 2.646370137736937
+    }
+  ],
+  "limitations": [
+    "This is character-level prediction on a 1.1 MB subset of Shakespeare, not a modern natural-language model.",
+    "A contiguous split means the test excerpt comes from the final portion of the collection; results depend on that ordering.",
+    "One seed and one corpus do not establish general language quality or performance on other CPUs."
+  ],
+  "method": {
+    "architecture": "one-layer causal Transformer, embedding=32, four attention heads, feed-forward width=64",
+    "baseline": "smoothed train-only unigram character model",
+    "batch_size": 16,
+    "context_characters": 64,
+    "optimizer": "AdamW(lr=0.002)",
+    "parameters": 14817,
+    "seed": 3401,
+    "steps": 200
+  },
+  "training_characters_per_second": 5677.090869033351,
+  "training_characters_processed": 204800,
+  "training_wall_seconds": 36.07481449999614,
+  "transformer_test_cross_entropy": 2.658598427931285,
+  "transformer_test_perplexity": 14.27626585447833,
+  "unigram_test_cross_entropy": 3.361969121279668,
+  "unigram_test_perplexity": 28.845936138440596
+}

@@ -1,0 +1,23 @@
+{
+  "repository": "timeweb_synergy_cpu_language_model",
+  "public_source_files": 14,
+  "excluded_offline_only": [
+    "results/article-05-tinyshakespeare-learning-curve.png"
+  ],
+  "sha256": {
+    ".gitignore": "d9d3d414f6f84c0ef3d8b09d59f49f6c2c173fab18219c9fa262db2383820cf5",
+    "README.md": "5017ee8071b93c7101b0824a2d5df90ced8a76435cee7804269db09657ec8175",
+    "evidence/02_05/proof_binary_and_cpu.py": "53960ccbad8fa26bdf4b36ea213be638da2b61b7ef7743fdd9d8febcff0f17b8",
+    "prototypes/__init__.py": "7ea3e33621d03c4e3e2271d2e93e55721d45d99472f589fa698ec105fcddfdb6",
+    "prototypes/__main__.py": "c63aff76bcd5a382a42c8d13eb3c2f5fb2c564b451bdfd20819631c3725055d6",
+    "prototypes/real_experiments/article05_real_text.py": "978ddaeb6c96730d4cc579a009664651fb54ce1ce26ecc3ba3ac55a9b0a9e516",
+    "prototypes/runner.py": "3e1a59a8d2260be864749b4aa583961569fdcbee7b161f1025ae3725a841306f",
+    "prototypes/scenarios/__init__.py": "60d32f11ef7875e4b24eedf3a631281803e0295a8206e39819cf2cae243632f8",
+    "prototypes/scenarios/article05.py": "568d71a07fdb472f582d09b303f989f9e9da215ac3d1cfb6e1788629edc6a708",
+    "prototypes/tests/test_article05_real_text.py": "394c1c51333cc3c3d94739b954dfe17d88d30601c51560f6fc6b71edfd78deb0",
+    "prototypes/tests/test_articles_01_05.py": "adebfab93b718e0fa121f055f7c9095c6882dad7144f82aa96433726d5089201",
+    "requirements.txt": "12b84930f4edd3f3d1fde62f07d61110a07a88bdfb5acc5338f7fda8a61b8247",
+    "results/article-05-tinyshakespeare-20261117T150255.591767Z.json": "d65ffd3c1125f6a6a244bd75558289663e2ad273226c5859bb650cf6921980eb",
+    "results/cpu_toy_smoke.json": "c89d2c5510f85e5984c2708abfad01cb51cca64550109506a76fd575c31ba578"
+  }
+}
